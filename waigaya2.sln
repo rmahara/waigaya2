@@ -19,9 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalProject.Domain", "1_ma
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinalProject.Infrastructure", "1_mahara\FinalProject\FinalProject.Infrastructure\FinalProject.Infrastructure.csproj", "{7E81F6B2-AEF0-4C75-8D6E-A0271228CFD0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2_Step1", "2_snakamura\2_Step1\2_Step1.csproj", "{48E37233-4EBD-4E70-B4D8-8294DF44D7E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_2_Step1", "2_snakamura\2_Step1\_2_Step1.csproj", "{48E37233-4EBD-4E70-B4D8-8294DF44D7E9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3_Step1", "3_kinjo\3_Step1\3_Step1.csproj", "{F9E99E03-87F6-4613-827F-EDAA1A84330D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "_3_Step1", "3_kinjo\3_Step1\_3_Step1.csproj", "{F9E99E03-87F6-4613-827F-EDAA1A84330D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
