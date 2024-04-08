@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34714.143
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "_StartProject", "_StartProject\_StartProject.csproj", "{F717C674-F281-448C-9E51-D6095B90D43A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_mahara", "1_mahara", "{1848CB10-50C1-4EFD-A4F5-93E3420EA780}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_snakamura", "2_snakamura", "{0F6221FB-6A4C-48AA-815C-F201EE2922EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3_kinjo", "3_kinjo", "{822DAF15-CFAD-47BB-9FBB-E32FDC297A44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F717C674-F281-448C-9E51-D6095B90D43A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F717C674-F281-448C-9E51-D6095B90D43A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F717C674-F281-448C-9E51-D6095B90D43A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F717C674-F281-448C-9E51-D6095B90D43A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F717C674-F281-448C-9E51-D6095B90D43A} = {1848CB10-50C1-4EFD-A4F5-93E3420EA780}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8D86BA90-2635-41AE-A0DE-F143D4798C10}
+	EndGlobalSection
+EndGlobal
