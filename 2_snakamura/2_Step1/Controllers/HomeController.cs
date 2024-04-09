@@ -1,8 +1,8 @@
-using _2_Step1.Models;
+using Waigaya2.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace _2_Step1.Controllers
+namespace Waigaya2.Controllers
 {
     public class HomeController : Controller
     {

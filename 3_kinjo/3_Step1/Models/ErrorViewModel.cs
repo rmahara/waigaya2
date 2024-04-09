@@ -1,4 +1,4 @@
-namespace _3_Step1.Models
+namespace Waigaya2.Models
 {
     public class ErrorViewModel
     {
