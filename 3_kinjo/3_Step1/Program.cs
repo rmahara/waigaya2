@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using Waigaya2.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// DBContextの登録
+builder.Services.AddDbContext<WaigayaDbContext>();
 
 var app = builder.Build();
 
@@ -23,5 +29,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+//属性ルーティング
+app.MapControllers();
 
 app.Run();
