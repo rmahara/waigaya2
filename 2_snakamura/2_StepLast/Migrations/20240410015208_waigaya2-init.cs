@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace _2_StepLast.Migrations
+namespace Waigaya2.Migrations
 {
     /// <inheritdoc />
     public partial class waigaya2init : Migration

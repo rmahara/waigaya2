@@ -9,7 +9,7 @@ using Waigaya2.Data;
 
 #nullable disable
 
-namespace _2_StepLast.Migrations
+namespace Waigaya2.Migrations
 {
     [DbContext(typeof(WaigayaDbContext))]
     [Migration("20240410015208_waigaya2-init")]

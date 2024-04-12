@@ -8,7 +8,7 @@ using Waigaya2.Data;
 
 #nullable disable
 
-namespace _2_StepLast.Migrations
+namespace Waigaya2.Migrations
 {
     [DbContext(typeof(WaigayaDbContext))]
     partial class WaigayaDbContextModelSnapshot : ModelSnapshot
@@ -48,31 +48,31 @@ namespace _2_StepLast.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(320),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5507),
                             Title = "回復アイテム"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(321),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5509),
                             Title = "武器"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(323),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5510),
                             Title = "防具"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(324),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5511),
                             Title = "家電"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(325),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5513),
                             Title = "生活用品"
                         });
                 });
@@ -123,7 +123,7 @@ namespace _2_StepLast.Migrations
                         {
                             Id = 1,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(480),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5631),
                             Description = "エクスカリバーには、普通の剣には無い特別な力が備わって\r\nいたと考えられています。敵の攻撃を跳ね返す魔力や、所持\r\n者に無敵の力を与える等の能力が伝承されています。",
                             Name = "エクスカリバー",
                             Price = 54000m
@@ -132,7 +132,7 @@ namespace _2_StepLast.Migrations
                         {
                             Id = 2,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(482),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5634),
                             Description = "ユニクロで売ってます",
                             Name = "ヒートテック",
                             Price = 2000m
@@ -141,7 +141,7 @@ namespace _2_StepLast.Migrations
                         {
                             Id = 3,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(484),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5636),
                             Description = "ダイソンではない",
                             Name = "掃除機",
                             Price = 30000m
@@ -150,7 +150,7 @@ namespace _2_StepLast.Migrations
                         {
                             Id = 4,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(485),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5638),
                             Description = "たんぱく質を英語でいうとプロテイン",
                             Name = "プロテイン",
                             Price = 4000m
@@ -159,7 +159,7 @@ namespace _2_StepLast.Migrations
                         {
                             Id = 5,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 4, 10, 10, 52, 8, 186, DateTimeKind.Local).AddTicks(487),
+                            CreatedAt = new DateTime(2024, 4, 10, 11, 8, 29, 180, DateTimeKind.Local).AddTicks(5639),
                             Description = "ただの水です",
                             Name = "500mlの水",
                             Price = 100m

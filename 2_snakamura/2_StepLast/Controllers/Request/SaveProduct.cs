@@ -4,7 +4,6 @@ using Waigaya2.Models;
 
 namespace Waigaya2.Controllers.Request
 {
-    //JSONを受取るためのメソッド
     public class SaveProduct
     {
         public int? Id { get; set; }
