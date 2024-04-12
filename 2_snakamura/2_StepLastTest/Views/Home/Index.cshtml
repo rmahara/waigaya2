@@ -1,0 +1,15 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<a class="nav-link" asp-area="" asp-controller="Products" asp-action="Index">全件取得 /products/Index</a>
+<a class="nav-link" asp-area="" asp-controller="Products" asp-action="Entry" asp-route-id="4">修正 /products/Entry</a>
+<a class="nav-link" asp-area="" asp-controller="Products" asp-action="UpsertDemo">保存 /products/Upsert</a>
+<a class="nav-link" asp-area="" asp-controller="Products" asp-action="DeleteDemo">削除 /products/Delete</a>
+<br />
+<a class="nav-link" asp-area="" asp-controller="categories" asp-action="insertdemo">カテゴリ追加 /categories/Insert</a>
