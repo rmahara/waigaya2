@@ -2,7 +2,7 @@
 
 namespace Waigaya2.Controllers.Response
 {
-    public class EnrtyResponse
+    public class ProductEnrtyResponse
     {
         /// <summary>
         /// 商品マスタ

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Waigaya2.Controllers.Request;
+using Waigaya2.Controllers.Response;
 using Waigaya2.Data;
 using Waigaya2.Models;
 
@@ -43,7 +44,13 @@ namespace Waigaya2.Controllers
                  p = _context.Products.FirstOrDefault(x => x.Id == id);
             }
 
-            return View("Views/Products/ProductEntry.cshtml", p);
+            var response = new ProductEnrtyResponse
+            {
+                Product = p,
+                Categories = _context.Categories.ToList(),
+            };
+
+            return View("Views/Products/ProductEntry.cshtml", response);
         }
 
         /// <summary>
