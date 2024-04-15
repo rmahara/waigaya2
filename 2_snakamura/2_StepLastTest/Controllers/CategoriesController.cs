@@ -5,7 +5,6 @@ using Waigaya2.Models;
 
 namespace Waigaya2.Controllers
 {
-    [Route("categories")]
     public class CategoriesController : Controller
     {
         private readonly WaigayaDbContext _context;
@@ -20,7 +19,6 @@ namespace Waigaya2.Controllers
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
-        [Route("insert")]
         [HttpPost]
         public IActionResult Insert([FromBody] SaveCategory request)
         {
@@ -40,10 +38,8 @@ namespace Waigaya2.Controllers
             {
                 return BadRequest();
             }
-            //return RedirectToAction(nameof(Index));
             return Ok();
         }
-
         /// <summary>
         /// カテゴリ追加
         /// </summary>

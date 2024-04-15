@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Waigaya2.Controllers.Request;
+using Waigaya2.Controllers.Response;
 using Waigaya2.Data;
 using Waigaya2.Models;
 
@@ -20,12 +22,11 @@ namespace Waigaya2.Controllers
         /// </summary>
         /// <returns></returns>
         [Route("")]
-        public IActionResult Index()
+        [Route("productlist")]
+        public IActionResult ProductList()
         {
-            
-            var list = _context.Products.Where(p => p.DeleteAt == null).ToList();
-            //return View("Views/Product/ProductList.cshtml", list);
-            return Json(list);
+            var list = _context.Products.Include(p => p.Category).Where(p => p.DeleteAt == null).ToList();
+            return View(list);
         }
 
         /// <summary>
@@ -43,8 +44,13 @@ namespace Waigaya2.Controllers
                  p = _context.Products.FirstOrDefault(x => x.Id == id);
             }
 
-            //return View("Views/Product/ProductEntry.cshtml", p);
-            return Json(p);
+            var response = new ProductEnrtyResponse
+            {
+                Product = p,
+                Categories = _context.Categories.ToList(),
+            };
+
+            return View("Views/Products/ProductEntry.cshtml", response);
         }
 
         /// <summary>
@@ -52,9 +58,9 @@ namespace Waigaya2.Controllers
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
-        [Route("upsert")]
         [HttpPost]
-        public IActionResult Upsert([FromBody] SaveProduct request)
+        [Route("upsert")]
+        public IActionResult Upsert([FromForm] SaveProduct request)
         {
             var product = _context.Products.FirstOrDefault(x => x.Id == request.Id);
 
@@ -76,8 +82,7 @@ namespace Waigaya2.Controllers
                 product.CategoryId = request.CategoryId;
             }
             _context.SaveChanges();
-            //return RedirectToAction(nameof(Index));
-            return Ok();
+            return RedirectToAction(nameof(ProductList));
         }
 
         /// <summary>
@@ -85,15 +90,14 @@ namespace Waigaya2.Controllers
         /// </summary>
         /// <param name="request"></param>
         /// <returns></returns>
+        [HttpPost]
         [Route("delete")]
-        [HttpDelete]
-        public IActionResult Delete([FromBody] SaveProduct request)
+        public IActionResult Delete([FromForm] SaveProduct request)
         {
             var product = _context.Products.FirstOrDefault(x => x.Id == request.Id);
 
             if (product != null)
             {
-
                 product.DeleteAt = DateTime.Now;
 
                 _context.SaveChanges();
@@ -102,8 +106,8 @@ namespace Waigaya2.Controllers
             {
                 return BadRequest();
             }
-            //return RedirectToAction(nameof(Index));
-            return Ok();
+
+            return RedirectToAction(nameof(ProductList));
         }
 
         /// <summary>
@@ -167,6 +171,5 @@ namespace Waigaya2.Controllers
             //return RedirectToAction(nameof(Index));
             return Ok();
         }
-
     }
 }
